@@ -36,7 +36,7 @@ def RGBnl(f,Q,I):
     # the color series
     color=dot(a,XYZ)        
     RGB=colour.XYZ_to_sRGB(color)
-    RGBnonl=nonlin(color)
+    RGBnonl=nonlin(RGB)
     return RGBnonl
 
 import time

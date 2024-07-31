@@ -41,6 +41,6 @@ def Color(f,a):
     XYZ=colour.wavelength_to_XYZ(w_(f), cmfs) # CIE coordinates
     color=dot(a,XYZ)
     RGB=colour.XYZ_to_sRGB(color)  # CIE to linear RGB conversion
-    RGBnl=nonlin(color)  # RGB to usual (non linear) RGB
+    RGBnl=nonlin(RGB)  # RGB to usual (non linear) RGB
     plot_single_colour_swatch(RGBnl)
     
