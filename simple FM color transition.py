@@ -6,8 +6,8 @@ from colour.plotting import *
 from Sound_Colors import w_,nonlin,cmfs
 
 # operator frequencies 
-f = 440
-Q=[1,2]
+f_base = 440
+Qvec=[1,2]
 
 # N is the list of subindices that we use from the color series
 p=50
@@ -36,12 +36,12 @@ def RGBnl(f,Q,I):
     # the color series
     color=dot(a,XYZ)        
     RGB=colour.XYZ_to_sRGB(color)
-    RGBnl=nonlin(color)
-    return RGBnl
+    RGBnonl=nonlin(color)
+    return RGBnonl
 
 import time
 start=time.time()
-shade=[RGBnl(f,Q,i/10) for i in range(201)] # final transition, 20 seconds
+shade=[RGBnl(f_base,Qvec,i/10) for i in range(201)] # final transition, 20 seconds
 print('Runtime: {} seconds'.format(time.time()-start))
 
 plot_multi_colour_swatches(shade,columns=10) # transition rendering
