@@ -2,7 +2,7 @@
 
 from numpy import log2, floor, dot
 import colour
-from colour.plotting import *
+from colour.plotting import plot_single_colour_swatch
 
 f1=440 # base frequency for octave reduction to [f1,2f1]
 
