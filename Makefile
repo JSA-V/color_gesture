@@ -9,4 +9,4 @@ format:
 lint:
 	pylint --disable=R,C **/*.py
 
-all: install lint format lint
+all: install lint format
