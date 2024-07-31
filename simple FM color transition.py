@@ -2,7 +2,7 @@ import numpy as np
 from scipy.special import jv as J
 from numpy import sign, dot
 import colour
-from colour.plotting import *
+from colour.plotting import plot_multi_colour_swatches
 from Sound_Colors import w_,nonlin,cmfs
 
 # operator frequencies 
