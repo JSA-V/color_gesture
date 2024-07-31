@@ -28,10 +28,9 @@ cmfs = colour.MSDS_CMFS['CIE 1931 2 Degree Standard Observer']
 # (electro-optical transfer function)
 def mininon(c): 
     if c<=0.0031308:
-        out=c*12.92
+        return c*12.92
     elif c>0.0031308:
-        out=1.055*(c)**(1/2.4)-0.055
-    return out
+        return 1.055*(c)**(1/2.4)-0.055
 
 def nonlin(RGB):
     return [mininon(c) for c in RGB]
