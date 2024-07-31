@@ -2,3 +2,6 @@ numpy
 scipy
 colour-science
 matplotlib
+pylint
+autopep8
+black
