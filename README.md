@@ -4,7 +4,7 @@ This repository contains the codes, written by Juan Sebastián Arias-Valero, to 
 
 ## 📂 Main Files
 
-- **utils/Sound_Colors.py**: Main module for transforming sounds to colors.
+- **utils/Sound_Colors.py**: Auxiliary module for transforming sounds to colors.
 - **FM path.py**: Code for creating frequency modulation paths.
 - **simple FM color transition.py**: Script for performing color transitions using frequency modulation.
 
