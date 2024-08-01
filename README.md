@@ -14,7 +14,7 @@ You can find an example of the generated results below:
 
 - 🎵 Audio File:
 <audio controls>
-    <source src="[path/to/your/Fm_path.wav](https://github.com/user-attachments/assets/ad304163-7953-40ec-877b-80f09b0b4be1)" type="audio/mp4">
+    <source src="https://github.com/user-attachments/assets/ad304163-7953-40ec-877b-80f09b0b4be1" type="audio/mp4">
     Your browser does not support the audio element.
   </audio>
 - 🖼️ Image:
