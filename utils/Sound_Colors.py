@@ -1,7 +1,8 @@
 # The color of a sound spectrum
 import numpy as np
 import colour
-from colour.plotting import plot_single_colour_swatch
+
+# from colour.plotting import plot_single_colour_swatch
 
 f1 = 440  # base frequency for octave reduction to [f1,2f1]
 
@@ -59,4 +60,4 @@ def RGBnl(f, a):
     return RGBnonl
 
 
-#plot_single_colour_swatch(RGBnl(np.array([440]), np.array([0.1])))
+# plot_single_colour_swatch(RGBnl(np.array([440]), np.array([0.1])))
