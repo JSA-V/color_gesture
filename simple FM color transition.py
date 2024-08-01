@@ -1,10 +1,9 @@
 import time
 import numpy as np
 from scipy.special import jv as J
-from numpy import sign, dot
-import colour
+from numpy import sign
 from colour.plotting import plot_multi_colour_swatches
-from utils.Sound_Colors import w_, nonlin, cmfs
+from utils.Sound_Colors import RGBnl
 
 # operator frequencies
 f_base = 440
@@ -15,7 +14,7 @@ p = 50
 N = range(-p, p + 1)
 
 
-def RGBnl(f, Q, I):
+def FM_RGBnl(f, Q, I):
     """from a simple FM wave with carrier frequency f,
     modulator frequency Q[1]*f,
     and modulation index I to standard RGB"""
@@ -34,17 +33,13 @@ def RGBnl(f, Q, I):
 
     freq = f * np.array(list(D.keys()))
     a = np.abs(list(D.values()))
-    XYZ = colour.wavelength_to_XYZ(w_(freq), cmfs)
-    # the color series
-    color = dot(a, XYZ)
-    RGB = colour.XYZ_to_sRGB(color)
-    RGBnonl = nonlin(RGB)
+    RGBnonl = RGBnl(freq,a)
     return RGBnonl
 
 
 start = time.time()
 shade = [
-    RGBnl(f_base, Qvec, i / 10) for i in range(201)
+    FM_RGBnl(f_base, Qvec, i / 10) for i in range(201)
 ]  # final transition, 20 seconds
 print("Runtime: {} seconds".format(time.time() - start))
 

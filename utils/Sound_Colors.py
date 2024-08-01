@@ -1,7 +1,6 @@
 # The color of a sound spectrum
 import numpy as np
 import colour
-from colour.plotting import plot_single_colour_swatch
 
 f1 = 440  # base frequency for octave reduction to [f1,2f1]
 
@@ -51,9 +50,9 @@ def nonlin(RGB):
 # Color from sound spectrum
 
 
-def Color(f, a):
+def RGBnl(f, a):
     XYZ = colour.wavelength_to_XYZ(w_(f), cmfs)  # CIE coordinates
     color = np.dot(a, XYZ)
     RGB = colour.XYZ_to_sRGB(color)  # CIE to linear RGB conversion
-    RGBnl = nonlin(RGB)  # RGB to usual (non linear) RGB
-    plot_single_colour_swatch(RGBnl)
+    RGBnonl = nonlin(RGB)  # RGB to usual (non linear) RGB
+    return RGBnonl
