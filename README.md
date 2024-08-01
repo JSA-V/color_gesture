@@ -13,11 +13,11 @@ This repository contains the codes, written by Juan Sebastián Arias-Valero, to 
 You can find an example of the generated results below:
 
 - 🎵 Audio File:
-<audio controls>
-    <source src="https://github.com/user-attachments/assets/ad304163-7953-40ec-877b-80f09b0b4be1" type="audio/mp4">
-    Your browser does not support the audio element.
-  </audio>
+
+https://github.com/user-attachments/assets/08c8cd57-7cec-435a-a2b7-5ad878caba6b
+
 - 🖼️ Image:
+
 ![🖼️ Image (.png)](FM_colors.png)
 
 ## 📄 Main Article
