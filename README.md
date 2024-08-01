@@ -12,7 +12,11 @@ This repository contains the codes, written by Juan Sebastián Arias-Valero, to 
 
 You can find an example of the generated results below:
 
-- ![🎵 Audio File (.wav)](FM_path.wav)
+- 🎵 Audio File:
+  <audio controls>
+    <source src="FM_path.wav" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
 - ![🖼️ Image (.png)](FM_colors.png)
 
 ## 📄 Main Article
