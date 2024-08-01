@@ -15,7 +15,6 @@ You can find an example of the generated results below:
 - 🎵 Audio File:
   <audio controls>
     <source src="FM_path.wav" type="audio/wav">
-    Your browser does not support the audio element.
   </audio>
 - ![🖼️ Image (.png)](FM_colors.png)
 
