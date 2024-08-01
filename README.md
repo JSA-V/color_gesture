@@ -13,7 +13,8 @@ This repository contains the codes, written by Juan Sebastián Arias-Valero, to 
 You can find an example of the generated results below:
 
 - 🎵 Audio File:
-https://github.com/user-attachments/assets/ad304163-7953-40ec-877b-80f09b0b4be1
+[🎵 Audio File (.wav)](https://github.com/user-attachments/assets/ad304163-7953-40ec-877b-80f09b0b4be1)
+
 - 🖼️ Image:
 ![🖼️ Image (.png)](FM_colors.png)
 
