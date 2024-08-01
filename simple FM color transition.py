@@ -33,7 +33,7 @@ def FM_RGBnl(f, Q, I):
 
     freq = f * np.array(list(D.keys()))
     a = np.abs(list(D.values()))
-    RGBnonl = RGBnl(freq,a)
+    RGBnonl = RGBnl(freq, a)
     return RGBnonl
 
 

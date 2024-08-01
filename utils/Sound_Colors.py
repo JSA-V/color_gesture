@@ -58,4 +58,5 @@ def RGBnl(f, a):
     RGBnonl = nonlin(RGB)  # RGB to usual (non linear) RGB
     return RGBnonl
 
-plot_single_colour_swatch(RGBnl(np.array([440]),np.array([0.1])))
+
+plot_single_colour_swatch(RGBnl(np.array([440]), np.array([0.1])))
