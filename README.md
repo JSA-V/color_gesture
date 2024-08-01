@@ -16,7 +16,8 @@ You can find an example of the generated results below:
   <audio controls>
     <source src="FM_path.wav" type="audio/wav">
   </audio>
-- ![🖼️ Image (.png)](FM_colors.png)
+- 🖼️ Image:
+![🖼️ Image (.png)](FM_colors.png)
 
 ## 📄 Main Article
 
